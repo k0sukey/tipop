@@ -99,6 +99,8 @@ POP
 .clear(myView)
 .spring(myView, {
     ...
+}, function(){
+    // animation complete callback
 });
 ```
 

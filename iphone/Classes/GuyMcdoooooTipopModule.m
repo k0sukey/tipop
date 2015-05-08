@@ -89,12 +89,19 @@
     
     TiViewProxy* proxy = nil;
     NSDictionary* properties = nil;
+    KrollCallback* callback = nil;
     
     ENSURE_ARG_AT_INDEX(proxy, args, 0, TiViewProxy);
     ENSURE_ARG_OR_NIL_AT_INDEX(properties, args, 1, NSDictionary);
+    ENSURE_ARG_OR_NIL_AT_INDEX(callback, args, 2, KrollCallback);
     
     TiThreadPerformOnMainThread(^{
         [popAnimator basicAnimationWithProxy:proxy andProperties:properties];
+        
+        if (callback != nil)
+        {
+            [callback call:nil thisObject:self];
+        }
     }, NO);
     
 }
@@ -103,12 +110,19 @@
     
     TiViewProxy* proxy = nil;
     NSDictionary* properties = nil;
+    KrollCallback* callback = nil;
     
     ENSURE_ARG_AT_INDEX(proxy, args, 0, TiViewProxy);
     ENSURE_ARG_OR_NIL_AT_INDEX(properties, args, 1, NSDictionary);
+    ENSURE_ARG_OR_NIL_AT_INDEX(callback, args, 2, KrollCallback);
     
     TiThreadPerformOnMainThread(^{
         [popAnimator springAnimationWithProxy:proxy andProperties:properties];
+        
+        if (callback != nil)
+        {
+            [callback call:nil thisObject:self];
+        }
     }, NO);
     
 }
@@ -117,12 +131,19 @@
     
     TiViewProxy* proxy = nil;
     NSDictionary* properties = nil;
+    KrollCallback* callback = nil;
     
     ENSURE_ARG_AT_INDEX(proxy, args, 0, TiViewProxy);
     ENSURE_ARG_OR_NIL_AT_INDEX(properties, args, 1, NSDictionary);
+    ENSURE_ARG_OR_NIL_AT_INDEX(callback, args, 2, KrollCallback);
     
     TiThreadPerformOnMainThread(^{
         [popAnimator decayAnimationWithProxy:proxy andProperties:properties];
+        
+        if (callback != nil)
+        {
+            [callback call:nil thisObject:self];
+        }
     }, NO);
     
 }

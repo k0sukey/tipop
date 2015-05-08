@@ -1,4 +1,3 @@
-dependencies: \
-  /Users/do/Developer/Titanium/tipop/iphone/Classes/pop/POPCGUtils.mm \
-  /Users/do/Developer/Titanium/tipop/iphone/Classes/pop/POPCGUtils.h \
-  /Users/do/Developer/Titanium/tipop/iphone/Classes/pop/POPDefines.h
+dependencies: /Users/Kosuke/src/tipop/iphone/Classes/pop/POPCGUtils.mm \
+  /Users/Kosuke/src/tipop/iphone/Classes/pop/POPCGUtils.h \
+  /Users/Kosuke/src/tipop/iphone/Classes/pop/POPDefines.h

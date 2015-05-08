@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/do/Developer/Titanium/tipop/iphone/Classes/GuyMcdoooooTipopModuleAssets.m \
-  /Users/do/Developer/Titanium/tipop/iphone/Classes/GuyMcdoooooTipopModuleAssets.h
+  /Users/Kosuke/src/tipop/iphone/Classes/GuyMcdoooooTipopModuleAssets.m \
+  /Users/Kosuke/src/tipop/iphone/Classes/GuyMcdoooooTipopModuleAssets.h
